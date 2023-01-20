@@ -1,0 +1,34 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "jhon",
+      "email": "jhon@gmail.com",
+      "phone": "6543214552"
+    },
+    {
+      "id": 2,
+      "name": "sony",
+      "email": "sony@gmail.com",
+      "phone": "9876543245"
+    },
+    {
+      "id": 3,
+      "name": "tony",
+      "email": "tony@gmail.com",
+      "phone": "5678902221"
+    },
+    {
+      "id": 4,
+      "name": "preethi",
+      "email": "preethi@gmail.com",
+      "phone": "4567893212"
+    },
+    {
+      "id": 5,
+      "name": "suraj sara",
+      "email": "suraj@gmail.com",
+      "phone": "7654321765"
+    }
+  ]
+}

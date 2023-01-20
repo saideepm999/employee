@@ -1,0 +1,45 @@
+{
+  "user": [
+    {},
+    {
+      "id": "adminha",
+      "fullname": "admin",
+      "password": "admin",
+      "phonenum": "76543221178",
+      "email": "admin@gmail.com",
+      "country": "India",
+      "address": "1st strret",
+      "gender": "male"
+    },
+    {
+      "id": "surajs",
+      "fullname": "suraj sara",
+      "password": "suraj",
+      "phonenum": "3478902222",
+      "email": "surajs@gmail.com",
+      "country": "Singapore",
+      "address": "ist street",
+      "gender": "male"
+    },
+    {
+      "id": "saideepm",
+      "fullname": "saideep meka",
+      "password": "deepu",
+      "phonenum": "9765432121",
+      "email": "saideepm@gmail.com",
+      "country": "Uk",
+      "address": "3rd street",
+      "gender": "male"
+    },
+    {
+      "id": "chakri",
+      "fullname": "chakradhar",
+      "password": "chakri",
+      "phonenum": "987654323",
+      "email": "chakri@gmail.com",
+      "country": "Uk",
+      "address": "3rd street",
+      "gender": "male"
+    }
+  ]
+}
