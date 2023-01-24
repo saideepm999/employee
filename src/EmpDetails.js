@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams ,useNavigate} from "react-router-dom";
 
 
 const EmpDetail = () => {
     const { empid } = useParams();
 
     const [empdata, empdatachange] = useState({});
+    const usenavigate=useNavigate();
 
     useEffect(() => {
         fetch("http://localhost:5000/employee/" + empid).then((res) => {
@@ -15,6 +16,10 @@ const EmpDetail = () => {
         }).catch((err) => {
             console.log(err.message);
         })
+        let username=sessionStorage.getItem('username');
+        if (username==='' || username===null){
+        usenavigate('/login')
+    }
     }, []);
     return (
         <div>

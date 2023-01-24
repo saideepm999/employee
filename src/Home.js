@@ -2,8 +2,8 @@ import React,{useEffect} from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 
 export default function Home() {
-  const usenavigate=useNavigate();
-  useEffect(() => {
+  const usenavigate=useNavigate()
+  useEffect(() => {;
     let username=sessionStorage.getItem('username');
     if (username==='' || username===null){
       usenavigate('/login')

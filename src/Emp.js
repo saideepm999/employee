@@ -35,6 +35,10 @@ const Emp = () => {
         }).catch((err) => {
             console.log(err.message);
         })
+        let username=sessionStorage.getItem('username');
+        if (username==='' || username===null){
+           navigate('/login')
+        }
     }, [])
     return (
         <div className="container">
@@ -45,6 +49,7 @@ const Emp = () => {
                 <div className="card-body">
                     <div className="divbtn">
                         <Link to="/create" className="btn btn-success">Add New (+)</Link>
+                        <Link to="/" className="btn m-2 btn-danger">Back</Link>
                     </div>
                     <table className="table table-bordered">
                         <thead className="bg-dark text-white">

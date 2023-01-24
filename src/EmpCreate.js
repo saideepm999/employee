@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmpCreate = () => {
@@ -12,6 +12,14 @@ const EmpCreate = () => {
 
 
     const navigate=useNavigate();
+    useEffect(() => {
+        let username=sessionStorage.getItem('username');
+        if (username==='' || username===null){
+          navigate('/login')
+        }
+      
+       
+      }, [])
 
     const handlesubmit=(e)=>{
       e.preventDefault();

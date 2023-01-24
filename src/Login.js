@@ -52,7 +52,7 @@ export default function Login() {
 
   }
   return (
-    <div className='row'>
+    <div className='row m-3 '>
       <div className='offset-lg-3 col-lg-6'>
         <form onSubmit={ProceedLogin} className='container'>
 

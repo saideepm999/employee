@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 const EmpEdit = () => {
     const { empid } = useParams();
+    const usenavigate=useNavigate()
 
     //const [empdata, empdatachange] = useState({});
 
@@ -18,6 +19,10 @@ const EmpEdit = () => {
         }).catch((err) => {
             console.log(err.message);
         })
+        let username=sessionStorage.getItem('username');
+        if (username==='' || username===null){
+           usenavigate('/login')
+    }
     }, []);
 
     const[id,idchange]=useState("");
