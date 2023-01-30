@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const EmpCreate = () => {
   const [id, idchange] = useState('');
@@ -16,12 +17,40 @@ const EmpCreate = () => {
       navigate('/login');
     }
   }, []);
+  const Isvalidate = () => {
+    let isproceed = true;
+    let errormessage = 'Please fill the details : ';
+    
+    if (name === null || name === '') {
+      isproceed = false;
+      errormessage += 'fullname ';
+    }
+    if (email === null || email === '') {
+      isproceed = false;
+      errormessage += 'email ';
+    }
+    if (phone === null || phone=== '') {
+      isproceed = false;
+      errormessage += 'Phone number ';
+    }
+    
+    if (!isproceed) {
+      toast.warning(errormessage);
+    } else {
+      if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+      } else {
+        isproceed = false;
+        toast.warning('Please enter the valid email');
+      }
+    }
+    return isproceed;
+  };                  
 
   const handlesubmit = (e) => {
     e.preventDefault();
     const empdata = { name, email, phone, active };
-
-    fetch('http://localhost:5000/employee', {
+    if (Isvalidate()){
+      fetch('http://localhost:5000/employee', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(empdata),
@@ -33,6 +62,10 @@ const EmpCreate = () => {
       .catch((err) => {
         console.log(err.message);
       });
+
+    }
+
+    
   };
 
   return (
