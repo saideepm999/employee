@@ -52,7 +52,7 @@ export default function Login() {
     return result;
   };
   return (
-    <div className="row m-3 ">
+    <div data-testid='login' className="row m-3 ">
       <div className="offset-lg-3 col-lg-6">
         <form onSubmit={ProceedLogin} className="container">
           <div className="card">

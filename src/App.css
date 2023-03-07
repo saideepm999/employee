@@ -36,21 +36,21 @@
     transform: rotate(360deg);
   }
 }
-.errmsg{
+.errmsg {
   color: red;
 }
-.app-check{
-  height:10px;
-  width:10px;
-  margin:1%
+.app-check {
+  height: 10px;
+  width: 10px;
+  margin: 1%;
 }
-.header{
-  width:100%;
+.header {
+  width: 100%;
   background-color: blue;
   font-weight: bold;
-  color:#ffff;
+  color: black;
   padding: 1%;
 }
-.pad{
+.pad {
   padding-left: 1%;
 }

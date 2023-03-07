@@ -1,14 +1,8 @@
 {
   "employee": [
     {
-      "id": 1,
-      "name": "jhon",
-      "email": "jhon@gmail.com",
-      "phone": "6543214552"
-    },
-    {
       "id": 2,
-      "name": "sony",
+      "name": "sonys",
       "email": "sony@gmail.com",
       "phone": "9876543245"
     },
@@ -36,6 +30,12 @@
       "phone": "8765432432",
       "active": true,
       "id": 6
+    },
+    {
+      "id": 7,
+      "name": "saideep meka",
+      "email": "saideepmekagmail.com",
+      "phone": "987654321"
     }
   ]
 }

@@ -40,6 +40,26 @@
       "country": "Uk",
       "address": "3rd street",
       "gender": "male"
+    },
+    {
+      "id": "harim",
+      "fullname": "hari s",
+      "password": "hari",
+      "phonenum": "7654321123",
+      "email": "hari@gmail.com",
+      "country": "India",
+      "address": "3rd street",
+      "gender": "male"
+    },
+    {
+      "id": "tomy",
+      "fullname": "tom s",
+      "password": "tomy",
+      "phonenum": "9876543345",
+      "email": "tom@gmail.com",
+      "country": "India",
+      "address": "32#",
+      "gender": "male"
     }
   ]
 }
